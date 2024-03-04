@@ -1,0 +1,137 @@
+@import "./variables.scss";
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+*,
+*::before,
+* ::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: $font-stack-main;
+  font-weight: $font-width-main;
+  font-size: $font-size-main;
+  color: $font-color-blue;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1175px;
+}
+
+button {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+  width: 180px;
+  height: 50px;
+  padding: 14px;
+
+  border: none;
+  border-radius: 25px;
+
+  font-family: $font-stack-main;
+  font-weight: $font-width-bold;
+  font-size: $font-size-main;
+  color: white;
+
+  background: linear-gradient(94.66deg, #4499d9 17.46%, #7367be 87.77%);
+}
+
+.header {
+  &__wrapper {
+    margin-top: 20px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 55px;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    gap: 42px;
+
+    font-weight: $font-width-bold;
+  }
+
+  &__item {
+    position: relative;
+    // overflow: hidden;
+    padding: 1px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 3px;
+      bottom: 0px;
+      left: 0px;
+      background-image: linear-gradient(
+        94.66deg,
+        #4499d9 17.46%,
+        #7367be 87.77%
+      );
+      transition: all 0.3s ease-in-out;
+      // transform: translateX(-100%);
+    }
+
+    &:hover::after {
+      width: 100%;
+      // transform: translateX(0);
+    }
+  }
+}
+
+.consoles {
+  background-image: url("/images/console-bg.jpg");
+  position: relative;
+  z-index: -993;
+
+  &__wrapper {
+    height: 1000px;
+  }
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    background-image: linear-gradient(
+      180deg,
+      rgba(238, 186, 156, 0.4) 0%,
+      rgba(245, 213, 195, 0) 100%
+    );
+  }
+}
