@@ -160,6 +160,7 @@ button:hover {
 }
 .consoles__text {
   font-size: 18px;
+  color: #826f8c;
   height: 116px;
   line-height: 29px;
 }
@@ -357,4 +358,67 @@ button:hover {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
   }
+}
+.about-consoles {
+  background-image: url(/images/about-pc-bg2.jpg);
+  padding-top: 113px;
+  padding-bottom: 156px;
+}
+.about-consoles__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 35px;
+}
+.about-consoles__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 566px;
+      flex-basis: 566px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+}
+.about-consoles__title {
+  font-size: 23px;
+  color: #446381;
+  font-weight: 700;
+}
+.about-consoles__subtitle {
+  font-size: 68px;
+  color: #eb8382;
+  font-weight: 700;
+}
+.about-consoles__text {
+  color: #826f8c;
+  line-height: 29px;
+}
+.about-consoles__images-container {
+  position: relative;
+  -ms-flex-preferred-size: 566px;
+      flex-basis: 566px;
+}
+.about-consoles__gamepad {
+  position: absolute;
+  top: 210px;
+  left: 0;
+  -webkit-animation: translate 3s linear infinite;
+          animation: translate 3s linear infinite;
+}
+.about-consoles__biger-detail {
+  position: absolute;
+  right: 70px;
+  top: -10px;
+  -webkit-animation: rotate 7s linear infinite;
+          animation: rotate 7s linear infinite;
+}
+.about-consoles__smaller-detail {
+  position: absolute;
+  top: 85px;
+  right: 199px;
+  -webkit-animation: rotate 7s linear infinite;
+          animation: rotate 7s linear infinite;
 }

@@ -163,6 +163,7 @@ button {
 
   &__text {
     font-size: $font-size-main;
+    color: $font-color-purple;
     height: 116px;
     line-height: 29px;
   }
@@ -316,5 +317,66 @@ button {
 
   0% {
     transform: translateY(0%);
+  }
+}
+
+.about-consoles {
+  background-image: url(/images/about-pc-bg2.jpg);
+  padding-top: 113px;
+  padding-bottom: 156px;
+
+  &__wrapper {
+    display: flex;
+    gap: 35px;
+  }
+
+  &__content {
+    display: flex;
+    flex-basis: 566px;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  &__title {
+    font-size: 23px;
+    color: $font-color-blue;
+    font-weight: $font-width-bold;
+  }
+
+  &__subtitle {
+    font-size: 68px;
+    color: $font-color-red;
+    font-weight: $font-width-bold;
+  }
+
+  &__text {
+    color: $font-color-purple;
+    line-height: 29px;
+  }
+
+  &__images-container {
+    position: relative;
+    flex-basis: 566px;
+  }
+
+  &__gamepad {
+    position: absolute;
+    top: 210px;
+    left: 0;
+    animation: translate 3s linear infinite;
+  }
+
+  &__biger-detail {
+    position: absolute;
+    right: 70px;
+    top: -10px;
+    animation: rotate 7s linear infinite;
+  }
+
+  &__smaller-detail {
+    position: absolute;
+    top: 85px;
+    right: 199px;
+    animation: rotate 7s linear infinite;
   }
 }
