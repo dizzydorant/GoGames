@@ -506,3 +506,20 @@ button:hover {
 .our-pricing__button {
   width: 260px;
 }
+
+.footer {
+  background-color: #ffe5d6;
+  border-top: 1px solid #816f8c;
+}
+.footer__wrapper {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
