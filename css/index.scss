@@ -458,8 +458,13 @@ button {
   background-color: #ffe5d6;
   border-top: 1px solid #816f8c;
 
+  &__logo {
+    width: 220px;
+  }
+
   &__wrapper {
     padding-top: 40px;
+    padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
