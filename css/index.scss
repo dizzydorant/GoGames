@@ -380,3 +380,76 @@ button {
     animation: rotate 7s linear infinite;
   }
 }
+
+.our-pricing {
+  padding-top: 50px;
+  padding-bottom: 120px;
+  background-color: #ffe5d6;
+
+  &__title {
+    text-align: center;
+    font-size: 23px;
+    font-weight: $font-width-bold;
+    padding-bottom: 23px;
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-size: 68px;
+    font-weight: $font-width-bold;
+    color: $font-color-red;
+    padding-bottom: 82px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  &__item {
+    flex-basis: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 45px;
+    background-color: #fbdacf;
+    border-radius: 5%;
+    transition: all 0.8s;
+
+    &:hover {
+      background-image: linear-gradient(180deg, #446381 0, #826f8c 100%);
+      color: white;
+      transform: scale(1.07);
+    }
+  }
+
+  &__name {
+    font-size: 32px;
+    font-weight: $font-width-bold;
+    margin-bottom: 40px;
+  }
+
+  &__span-value {
+    font-size: 40px;
+    font-weight: $font-width-bold;
+    color: $font-color-red;
+  }
+
+  &__value {
+    font-size: $font-size-main;
+    color: $font-color-red;
+    margin-bottom: 30px;
+  }
+
+  &__tariffs {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__button {
+    width: 260px;
+  }
+}
